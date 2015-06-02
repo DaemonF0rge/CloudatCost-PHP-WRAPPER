@@ -5,7 +5,7 @@ class cloudatcost
 {
 	private $api_key;
 	private $api_login;
-	private $url_listserver= 'https://panel.cloudatcost.com/api/v1/listservers.php';
+	private $url_listservers= 'https://panel.cloudatcost.com/api/v1/listservers.php';
 	private $url_listtemplates= 'https://panel.cloudatcost.com/api/v1/listtemplates.php';
 	private $url_listtasks= 'https://panel.cloudatcost.com/api/v1/listtasks.php';
 	private $url_powerop= 'https://panel.cloudatcost.com/api/v1/powerop.php';
@@ -24,9 +24,9 @@ class cloudatcost
 	}
 	
 
-	public function listServer()
+	public function listServers()
 	{
-		$rdata= $this->sendUrlReq($this->url_listserver);
+		$rdata= $this->sendUrlReq($this->url_listservers);
 		if($rdata['status'] == 'error'){
 			return $rdata;
 		}else{
