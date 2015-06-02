@@ -21,7 +21,7 @@ $cac= new cloudatcost($key, $login);
 ###List Servers
 >will return an array of servers.
 ```
-$data = $cac->listServer();
+$data = $cac->listServers();
 ```	
 	
 ###Get Server by ID
