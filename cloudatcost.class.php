@@ -1,6 +1,6 @@
 <?php
-#Still a work in progress
-
+//Still a work in progress
+//Will be adding more comments and fixing up the code a bit.
 class cloudatcost
 {
 	private $api_key;
