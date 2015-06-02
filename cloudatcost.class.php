@@ -256,9 +256,9 @@ class cloudatcost
 		$vars['sid']=$server_id;
 		$rdata= $this->sendUrlReq($this->url_delete, $vars, 'POST');
 		if($rdata['status'] == 'error'){
-			return $rdata;
+			return false;
 		}else{
-			return $rdata;
+			return true;
 		}
 	}
 
