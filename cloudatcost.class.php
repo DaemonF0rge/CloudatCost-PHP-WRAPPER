@@ -134,6 +134,18 @@ class cloudatcost
 	}
 	
 	
+	public function reboot($server_id, $powerop = 'reset')
+	{
+		$vars['sid']=$server_id;
+		$vars['action']= $powerop;
+		$rdata= $this->sendUrlReq($this->url_powerop, $vars, 'POST');
+		if($rdata['status'] == 'error'){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
 	
 	public function setName($server_id,$server_name)
 	{
