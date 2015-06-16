@@ -37,7 +37,7 @@ class cloudatcost
 	
 	public function getServer($server_id)
 	{
-		$rdata= $this->sendUrlReq();
+		$rdata= $this->listServers();
 		if($rdata['status'] == 'error'){
 			return $rdata;
 		}else{
