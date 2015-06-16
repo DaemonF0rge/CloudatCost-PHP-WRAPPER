@@ -59,6 +59,18 @@ $data = $cac->listFilteredTasks($property_1, $value_1, $property_2, $value_2);
 ```
 $data = $cac->listFilteredTasks($property_1, $value_1, $property_2, $value_2, $property_3, $value_3);
 ```	
+
+###Reboot
+>will return true if successfull, false if error
+```
+$data = $cac->reboot($server_id); // will set mode to normal.
+```
+```
+$data = $cac->reboot($server_id, "poweron"); // Will turn server on.
+```
+```
+$data = $cac->reboot($server_id, "poweroff"); // Will turn server off.
+```
 	
 ###Set mode
 >will return true if successfull, false if error
